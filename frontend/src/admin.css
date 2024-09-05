@@ -1,0 +1,113 @@
+/* Overall layout for admin dashboard */
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #353534;
+  
+}
+
+.header {
+  background-color: #111111;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: aliceblue;
+  position: relative;
+  border-radius: 10px;
+  height: 60px;
+}
+
+.header__logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.header__search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.header__search-input {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  height: 20px;
+  width: 280px;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  margin-top: 70px;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px;
+  transition: width 0.3s ease;
+}
+
+.sidebar--closed {
+  width: 80px;
+}
+
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__logo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sidebar__nav-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__nav-option {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.sidebar__nav-option:hover {
+  background-color: #495057;
+}
+
+.sidebar__nav-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.button--logout {
+  background-color: #dc3545;
+}
+
+.button--logout:hover {
+  background-color: #c82333;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-image: url(/cal10.avif);
+  filter: grayscale(20%);
+  background-size: cover;
+}
+
+.IoIosSettings{
+  font-size: 30px;
+}
+
+.sidebar__nav-text{
+  margin-left: 15px;
+}
